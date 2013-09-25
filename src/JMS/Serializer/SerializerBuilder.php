@@ -189,6 +189,7 @@ class SerializerBuilder
             'xml' => new XmlSerializationVisitor($this->propertyNamingStrategy),
             'yml' => new YamlSerializationVisitor($this->propertyNamingStrategy),
             'json' => new JsonSerializationVisitor($this->propertyNamingStrategy),
+            'array' => new ArraySerializationVisitor($this->propertyNamingStrategy)
         ));
 
         return $this;
